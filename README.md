@@ -20,5 +20,5 @@ The current limitations of this design include potential battery life excessive 
   <li>Allow repeated execution of recording notification</li>
   <li>Convert Audio to Text</li>
   <li>Parse text into keywords</li>
-  <li>Store keywords</li>
+  <li>Store/upload keywords</li>
 </ul> 
