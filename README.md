@@ -6,7 +6,7 @@ The core structure of this project will revolve around finding a way to send aud
 ## Challenges
 The first challenge above all would be getting permission from android to use the microphone on demand. The easiest way to circumvent this is to use Ok Google to pipe input directly into the app, allowing for better battery performance, built in parsing, and no worry of permission problems. If the route of implementing the recording through the app is chosen, Read, Write, and Record permissions are needed; however, after long durations of microphone usage results may begin to vary. A solution to this would be to have a notification on a timer and upon notifying the user, create and start a MediaRecorder and then stop it after the desired amount of time. Something critical to note is the following:
 <br>
-Note: On devices running Android 9 (API level 28) or higher, apps running in the background cannot access the microphone. Therefore, your app should record audio only when it's in the foreground or when you include an instance of MediaRecorder in a foreground service. 
+***Note: On devices running Android 9 (API level 28) or higher, apps running in the background cannot access the microphone. Therefore, your app should record audio only when it's in the foreground or when you include an instance of MediaRecorder in a foreground service.***
 <br>
 Due to this the user must manually start the recording service and it potentially need to work off of pauses and resumes; however, I am unsure how this will effect the battery performance or if the microphone will function as intended after X pauses and resumes.
 <br>
