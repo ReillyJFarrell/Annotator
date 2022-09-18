@@ -1,5 +1,5 @@
 # Annotator
-
+###Apk is included in project
 ## Structure
 The core structure of this project will revolve around finding a way to send audio data to the application from the lock screen of the phone. Once this is has been implemented efficiently, this can be passed through a natural language processor then sent for data storage. The TextToSpeech class could be a possible option for turning the raw audio recordings into text. Then, any form of natural language processsing would suffice to identify keywords. For example, A POS Tagger utilizing nltk and then Spaccy and nltk would be able to retrieve the words/actions we want to store. If the nlp portion of the processing is not viable on an android device for battery or performance reasons, perhaps it can be simply uploaded to a server for pre-processing. This action could be done once a day, or once a week, or over a different period. Regarding methods of storing the raw audio files, it may be more efficient to use a single file and keep adding to it then split it prior to processing.
 <br>
