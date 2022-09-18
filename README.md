@@ -14,3 +14,11 @@ Due to this the user must manually start the recording service and it potentiall
 For this basic implementation I have created an app that will once prompted, wait 10 seconds then play a notification sound (through android notifications) and then take recording input for 10 more seconds. This can all be done from the app or from the lock screen. This proves the concept of an app being able to notify the user from the background and recieve input and save it all from the lockscreen. For testing, the app's implementation also includes a playback button to ensure the recording is as intended.
 ## Limitations
 The current limitations of this design include potential battery life excessive drain, no way to distinguish between other application notifications and this app's, demanding the user have their phone notifications on, and no built in processing of audio input. Utilizing the google assistant to pipe data into the application would be a good first step in addressing these problems.
+## Future
+<ul>
+  <li>Be able to launch app from notification</li>
+  <li>Allow repeated execution of recording notification</li>
+  <li>Convert Audio to Text</li>
+  <li>Parse text into keywords</li>
+  <li>Store keywords</li>
+</ul> 
